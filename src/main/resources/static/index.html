@@ -6,11 +6,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>ID Card/title>
+        <title>ID Card</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>ID Card</div>
+         <form action="/view" method="post" enctype="multipart/form-data">
+             <hr/>
+             <input type="text" name="name" placeholder="Username"><br>
+            <input type="date" name="tanggal"><p>
+            <input type="file" name="gambar"><p>
+            <input type="submit" name="login" class="login login-submit" value="Send"><br>
+        </form>
     </body>
 </html>
