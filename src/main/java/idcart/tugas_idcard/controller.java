@@ -31,7 +31,7 @@ public class controller {
         SimpleDateFormat sul = new SimpleDateFormat("EEEE, dd MMMM yyyy");
         String tanggal = sul.format(date);
 
-        String blob = Base64s.encodeBase64String(file.getBytes());
+        String blob = Base64.encodeBase64String(file.getBytes());
         String gambar = "data:image/jpeg;base64,".concat(blob);
 
         model.addAttribute("name", nama);
